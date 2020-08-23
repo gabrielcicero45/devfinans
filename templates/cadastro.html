@@ -1,0 +1,115 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <!-- Estilo customizado -->
+    <link rel="stylesheet" type="text/css" href="{% static 'estilo.css' %}">
+</head>
+<body>
+    <header id="header1">
+        <nav>
+            <div class="container ">
+                <a href="{% url 'inicio' %}" class="navbar-brand">
+                    <img src="{% static 'imagens/logo_preto.png' %}" class="align-self-center">
+                </a>
+                </div>
+            </div>
+        </nav>
+        <hr>
+    </header>
+    <section>
+        <div class="container" >
+            <div class="row">
+                <div class="col-md-4"></div>
+                <div class="col-md-4" style="margin-bottom: 70px;">
+                <h2> Cadastre-se</h2>
+                <form method="POST" action="">
+                    {% csrf_token %}
+                <div class="input-group mb-3">
+
+                    <div class="input-group-append">
+                        <span class="input-group-text"><i class="fas fa-user"></i></span>
+                    </div>
+                    {{form.username}}
+                </div>
+                <div class="input-group mb-2">
+                    <div class="input-group-append">
+                        <span class="input-group-text"><i class="fas fa-envelope-square"></i></span>
+                    </div>
+                    {{form.email}}
+                </div>
+                <div class="input-group mb-2">
+                    <div class="input-group-append">
+                        <span class="input-group-text"><i class="fas fa-key"></i></span>
+                    </div>
+                    {{form.password1}}
+                </div>
+                <div class="input-group mb-2">
+                    <div class="input-group-append">
+                        <span class="input-group-text"><i class="fas fa-key"></i></span>
+                    </div>
+                    {{form.password2}}
+                </div>
+                   <div class="d-flex justify-content-center mt-3 login_container">
+                     <input class="btn login_btn" type="submit" value="Cadastre-se">
+                   </div>
+
+            </form>
+                </div>
+                <div class="col-md-4">
+                    <img src="{% static 'imagens/note.jpg' %}" class="img-fluid">
+                </div>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+        <div class="row">
+            <div class="col-md-8 d-flex collapse mt-2">
+                <p>
+                        <a href="{% url 'inicio' %}" class="btn">Home</a>
+               
+                        <a href="" class="btn">Recursos</a>
+                   
+                        <a href="" class="btn">Benefícios</a>
+                   
+                        <a href="" class="btn">Preços</a>
+                    
+                </p>         
+            </div>
+            <div class="col-md-4">
+                <p>Redes Sociais:
+                    <a href="" class="btn btn-outline-light">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="" class="btn btn-outline-light">
+                        <i class="fab fa-instagram fa-lg"></i>
+                    </a>
+                    </p>
+            </div>
+           
+        </div>
+        </div>
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+body {
+	height: 100%;
+}
+nav{
+	background: #3f1b87;
+	color: white;
+}
+nav:hover{
+	background: #851bfb;
+}
+#home {
+	background: #3f1b87;
+	color: white;
+	padding-top: 50px;
+}
+.login{
+	align-content: center;
+	margin-top: 10px;
+	padding: 3px 0px;
+}
+#cadastre{
+        margin-top: 0px;
+		background-color: #3f1b87;
+		color: white;
+}
+.conteudo{
+	padding:60px 0px;
+	border-bottom: 1px solid rgba(170, 155, 170, 0.333);
+}
+footer{
+	background: #3f1b87;
+	align-self: center;
+	color:white;
+}
+.footer{
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+.footer p a{
+	margin:5px 15px;
+}
