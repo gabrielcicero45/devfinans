@@ -7,6 +7,10 @@ Site de finanças ilustrativo em Django e Bootstrap
 -Cadastro de Usuários
 -Sitema de Autenticação
 
-# Disponivel em :
+# Disponivel em:
+ https://devfinans-beta.herokuapp.com/
+ 
+ # Tutorial de Deploy :
+ https://github.com/gabrielcicero45/django-heroku
 
-em breve ... 
+Atualizações em breve ... 
