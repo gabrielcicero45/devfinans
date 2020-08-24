@@ -38,26 +38,33 @@
                 <h2> Cadastre-se</h2>
                 <form method="POST" action="">
                     {% csrf_token %}
-                <div class="input-group mb-3">
-
+                    <p>Nome de usuario:</p>
+                    <div class="input-group mb-2">
+                   
                     <div class="input-group-append">
                         <span class="input-group-text"><i class="fas fa-user"></i></span>
                     </div>
                     {{form.username}}
                 </div>
+                <p>Seu e-mail :</p>
                 <div class="input-group mb-2">
+                    
                     <div class="input-group-append">
                         <span class="input-group-text"><i class="fas fa-envelope-square"></i></span>
                     </div>
                     {{form.email}}
                 </div>
+                <p>Sua senha :</p>
                 <div class="input-group mb-2">
+                    
                     <div class="input-group-append">
                         <span class="input-group-text"><i class="fas fa-key"></i></span>
                     </div>
                     {{form.password1}}
                 </div>
+                <p>Confirme sua senha :</p>
                 <div class="input-group mb-2">
+                    
                     <div class="input-group-append">
                         <span class="input-group-text"><i class="fas fa-key"></i></span>
                     </div>
