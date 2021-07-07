@@ -32,16 +32,6 @@
                 </button>
                 <div class="collapse navbar-collapse" id="nav-principal">
                     <ul class="navbar-nav ml-auto">
-
-                        <li class="nav-item">
-                            <a href="#recursos" class="btn-outline-light ml-4">Recursos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#beneficios" class="btn-outline-light ml-4">Benefícios</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="" class="btn-outline-light ml-4">Blog</a>
-                        </li>
                         <li class="nav-item">
                             <a href="{% url 'cadastro' %}" class="btn btn-light ml-4">Inscrever-se</a>
                         </li>
@@ -97,11 +87,11 @@
             <div class="row">
                 <div class="col-md-6 d-flex">
                     <div id="beneficios" class="align-itself-center">
-                        <h1>DevFinans é Perfeito para você</h1>
+                        <h2 class="font-weight-bold my-5">DevFinans é Perfeito para você</h2>
                         <p>Somos uma empresa dedicada à você programador freelancer, oferecemos um serviço personalizado
                             para suas finanças.</p>
 
-                        <button type="button" class="btn btn-primary">Saiba mais</button>
+                        <button type="button" class="btn btn-primary p-2">Saiba mais</button>
                     </div>
                 </div>
                 <div class="col-md-6 d-none d-md-block">
@@ -119,10 +109,10 @@
                 </div>
                 <div class="col-md-6 d-flex" id="recursos">
                     <div class="align-itself-center">
-                        <h1>Venha para DevFinans</h1>
-                        <p>Seja mais produtivo com a nossa consultoria financeira, otimize seu tempo deixando nossa
+                        <h2 class="font-weight-bold my-5">Venha para DevFinans</h2>
+                        <p class="my-4">Seja mais produtivo com a nossa consultoria financeira, otimize seu tempo deixando nossa
                             equipe maximar a rentabilidade de seus ganhos</p>
-                        <button type="button" class="btn btn-primary">Saiba Mais</button>
+                        <button type="button" class="btn btn-primary p-2">Saiba Mais</button>
                     </div>
                 </div>
 
@@ -133,35 +123,33 @@
         <!-- Seção Conteudo !-->
         <div class="container">
             <div class="row">
-                <div class="col-lg-4 d-flex ">
-                    <div class="card" style="width: 17rem;">
-                        <img src="{% static './imagens/economize.png' %}" class="card-img-top">
-                        <div class="card-body">
-                            <h5 class="card-title">Seus sonhos na palma da mão</h5>
-                            <p class="card-text">Some quick and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Leia Mais</a>
+                <div class="col-12 d-flex ">
+                    <div class="card-deck">
+                        <div class="card" >
+                            <img src="{% static './imagens/economize.png' %}" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Seus sonhos na palma da mão</h5>
+                                <p class="card-text">Some quick and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Leia Mais</a>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 d-flex">
-                    <div class="card" style="width: 18rem;">
-                        <img src="{% static './imagens/facil.png' %}" class="card-img-top">
-                        <div class="card-body">
-                            <h5 class="card-title">Multiplataformas</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Leia Mais</a>
+                   
+                        <div class="card" >
+                            <img src="{% static './imagens/facil.png' %}" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Multiplataformas</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                    of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Leia Mais</a>
+                            </div>
                         </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 d-flex ">
-                    <div class="card" style="width: 18rem;">
-                        <img src="{% static './imagens/suporte.png' %}" class="card-img-top">
-                        <div class="card-body">
-                            <h5 class="card-title">Suporte Online</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet conseeos ipsa eum.</p>
-                            <a href="#" class="btn btn-primary">Leia Mais</a>
+                        <div class="card" >
+                            <img src="{% static './imagens/suporte.png' %}" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Suporte Online</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet conseeos ipsa eum.</p>
+                                <a href="#" class="btn btn-primary">Leia Mais</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -169,18 +157,18 @@
         </div>
     </section>
     <section>
-        <footer>
+        <footer class="footer">
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 d-flex collapse mt-2">
                         <p>
-                            <a href="{% url 'inicio' %}" class="btn">Home</a>
+                            <a href="{% url 'inicio' %}" class="btn  text-light">Home</a>
 
-                            <a href="" class="btn">Recursos</a>
+                            <a href="" class="btn text-light">Login</a>
 
-                            <a href="" class="btn">Benefícios</a>
+                            <a href="" class="btn text-light">Cadastro</a>
 
-                            <a href="" class="btn">Blog</a>
+                            <a href="" class="btn text-light">Blog</a>
 
                         </p>
                     </div>
